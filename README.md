@@ -18,8 +18,10 @@ A lightweight OCR + NLP tool that analyzes product ingredient lists and instantl
 ## Demo
 
 Toxic ingredients:
-Sodium laureth sulfate 6/10 ███████████····················
-Methylisothiazolinone (MI) 9/10 ███████████████████···········
+
+Sodium laureth sulfate        6/10 ███████████····················
+
+Methylisothiazolinone (MI)    9/10 ███████████████████···········
 
 Overall score: 7.75 / 10
 Verdict: AVOID — High risk, especially for leave-on use.
