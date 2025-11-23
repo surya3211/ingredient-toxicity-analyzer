@@ -12,7 +12,6 @@ import java.util.regex.Pattern;
 
 public class IngredientAnalyzer {
 
-    // ---------- CONFIG: update these to match your system ----------
     private static final String IMAGE_PATH = "D:\\Java Projects\\app2\\ingredient_label.png";
     private static final String TESS_INSTALL_PATH = "C:\\Program Files\\Tesseract-OCR";
     // ----------------------------------------------------------------
@@ -45,9 +44,9 @@ public class IngredientAnalyzer {
     // Normalize OCR text
     public static String normalizeOcr(String text) {
         if (text == null) return "";
-        text = text.replaceAll("-\\s*\\r?\\n\\s*", ""); // join hyphenated breaks
-        text = text.replaceAll("\\r?\\n", " ");        // newlines -> spaces
-        text = text.replaceAll("\\s{2,}", " ").trim(); // collapse multiple spaces
+        text = text.replaceAll("-\\s*\\r?\\n\\s*", ""); 
+        text = text.replaceAll("\\r?\\n", " ");        
+        text = text.replaceAll("\\s{2,}", " ").trim();
         return text.toLowerCase();
     }
 
@@ -187,7 +186,7 @@ public class IngredientAnalyzer {
     }
 
     public static void main(String[] args) {
-        // Silence stderr to remove library warnings
+    
         PrintStream originalErr = System.err;
         System.setErr(new PrintStream(OutputStream.nullOutputStream()));
 
