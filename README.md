@@ -1,5 +1,8 @@
-# ingredient-toxicity-analyzer
-"A simple OCR + toxicity analysis tool that scans product ingredient lists and generates a toxicity score + safety verdict."
+# Ingredient-toxicity-analyzer
+Scan ingredient labels → Detect harmful chemicals → Get toxicity meter + safety verdict.
+
+A lightweight OCR + NLP tool that analyzes product ingredient lists and instantly tells users how safe a product is.
+
 
 📦 Ingredient Toxicity Analyzer
 
