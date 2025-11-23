@@ -1,54 +1,37 @@
 # Ingredient-toxicity-analyzer
-Scan ingredient labels → Detect harmful chemicals → Get toxicity meter + safety verdict.
 
 A lightweight OCR + NLP tool that analyzes product ingredient lists and instantly tells users how safe a product is.
 
+WHAT IT DOES
 
-📦 Ingredient Toxicity Analyzer
+• Extracts ingredient text from product images (Tesseract OCR)
+• Cleans & normalizes messy OCR text
+• Detects common harmful / allergenic ingredients
+• Generates:
+  -Per-ingredient toxicity meters
+  -Overall toxicity score (0–10)
+  -Final verdict: Safe / Caution / Avoid
 
-A lightweight CLI tool that uses OCR + rule-based NLP to detect potentially harmful ingredients from product labels.
+• Demo-
 
-🔍 What it does
+Toxic ingredients:
+Sodium laureth sulfate            6/10  ███████████····················
+Methylisothiazolinone (MI)        9/10  ███████████████████···········
 
-Extracts ingredient text from product images using Tesseract OCR
-
-Cleans and normalizes the OCR output
-
-Detects known harmful or allergenic chemicals
-
-Generates:
-
-Toxicity meters per-ingredient
-
-Overall toxicity score
-
-Final safety verdict (Safe / Caution / Avoid)
-
-🧪 Demo
-Toxic ingredients (severity meter 0–10):
-Sodium laureth sulfate            6/10  ███████████·……
-Methylisothiazolinone (MI)        9/10  ██████████████…
-
-Overall toxicity score: 7.75 / 10  
-Overall meter: ███████████████████····················  
+Overall score: 7.75 / 10
 Verdict: AVOID — High risk, especially for leave-on use.
 
-🎯 PM Case Impact
 
-As a PM, I built this tool to:
+• WHY THIS PROJECT-
 
-Understand how OCR + NLP pipelines work
+  -Built to practice product thinking + technical depth
+  -Turning a user pain point into a working prototype
+  =Creating a simple scoring model to support clear decisions
+  =Demonstrating rapid prototyping and problem-solving
 
-Improve my ability to translate user problems into technical solutions
-
-Demonstrate decision-making using severity scoring + heuristics
-
-Explore safety in consumer products through data-backed signals
-
-🛠 Tech Stack
+• TECH STACK-
 
 Java
-
 Tesseract OCR (CLI)
-
-Regex-based NLP classification
+Regex-based NLP detection
+ASCII toxicity meters + color coding
